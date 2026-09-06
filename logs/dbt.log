@@ -1,0 +1,73 @@
+[0m17:05:25.389216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10631e270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a43110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a43610>]}
+
+
+============================== 17:05:25.408979 | a358198c-f75e-4274-ae15-e26ddc42a6ab ==============================
+[0m17:05:25.408979 [info ] [MainThread]: Running with dbt=1.12.3
+[0m17:05:25.410451 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'printer_width': '80', 'partial_parse': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'use_colors': 'True', 'profiles_dir': '/Users/ejaico/.dbt', 'empty': 'None', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'static_parser': 'True', 'invocation_command': 'dbt init dbt_ecommerce', 'version_check': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'hints_enabled': 'True', 'target_path': 'None', 'log_path': 'logs', 'write_json': 'True', 'use_experimental_parser': 'False'}
+[0m17:05:25.445079 [debug] [MainThread]: Starter project path: /Users/ejaico/Documents/ecommerce_retention_pipeline/.venv/lib/python3.14/site-packages/dbt/include/starter_project
+[0m17:05:25.457965 [info ] [MainThread]: Setting up your profile.
+[0m17:05:31.629806 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m17:05:31.631020 [info ] [MainThread]: dbt version: 1.12.3
+[0m17:05:31.631890 [info ] [MainThread]: python version: 3.14.2
+[0m17:05:31.632549 [info ] [MainThread]: python path: /Users/ejaico/Documents/ecommerce_retention_pipeline/.venv/bin/python3.14
+[0m17:05:31.633115 [info ] [MainThread]: os info: macOS-13.7.8-x86_64-i386-64bit-Mach-O
+[0m17:05:31.710941 [info ] [MainThread]: Using profiles dir at /Users/ejaico/.dbt
+[0m17:05:31.711436 [info ] [MainThread]: Using profiles.yml file at /Users/ejaico/.dbt/profiles.yml
+[0m17:05:31.711815 [info ] [MainThread]: Using dbt_project.yml file at /Users/ejaico/Documents/ecommerce_retention_pipeline/dbt_ecommerce/dbt_project.yml
+[0m17:05:31.722300 [info ] [MainThread]: adapter type: duckdb
+[0m17:05:31.723288 [info ] [MainThread]: adapter version: 1.11.0
+[0m17:05:31.950227 [info ] [MainThread]: Configuration:
+[0m17:05:31.950738 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:05:31.951121 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:05:31.951470 [info ] [MainThread]: Required dependencies:
+[0m17:05:31.951942 [debug] [MainThread]: Executing "git --help"
+[0m17:05:32.002942 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:05:32.004231 [debug] [MainThread]: STDERR: "b''"
+[0m17:05:32.004807 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:05:32.005484 [info ] [MainThread]: Connection:
+[0m17:05:32.006283 [info ] [MainThread]:   database: dev
+[0m17:05:32.006743 [info ] [MainThread]:   schema: main
+[0m17:05:32.007147 [info ] [MainThread]:   path: dev.duckdb
+[0m17:05:32.007552 [info ] [MainThread]:   config_options: None
+[0m17:05:32.007931 [info ] [MainThread]:   extensions: None
+[0m17:05:32.008468 [info ] [MainThread]:   settings: {}
+[0m17:05:32.009060 [info ] [MainThread]:   external_root: .
+[0m17:05:32.009786 [info ] [MainThread]:   use_credential_provider: None
+[0m17:05:32.010216 [info ] [MainThread]:   attach: None
+[0m17:05:32.010605 [info ] [MainThread]:   filesystems: None
+[0m17:05:32.012195 [info ] [MainThread]:   remote: None
+[0m17:05:32.012778 [info ] [MainThread]:   plugins: None
+[0m17:05:32.022683 [info ] [MainThread]:   disable_transactions: False
+[0m17:05:32.025840 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m17:05:32.343371 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m17:05:32.494936 [debug] [MainThread]: Using duckdb connection "debug"
+[0m17:05:32.495517 [debug] [MainThread]: On debug: select 1 as id
+[0m17:05:32.495990 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:05:32.590819 [debug] [MainThread]: SQL status: OK in 0.095 seconds
+[0m17:05:32.592645 [debug] [MainThread]: On debug: Close
+[0m17:05:32.593649 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:05:32.594545 [info ] [MainThread]: [32mAll checks passed![0m
+[0m17:05:32.595548 [info ] [MainThread]: Your new dbt project "dbt_ecommerce" was created!
+Initialized new project in /Users/ejaico/Documents/ecommerce_retention_pipeline/dbt_ecommerce/dbt_ecommerce
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:05:32.629990 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 7.413238, "process_in_blocks": "0", "process_kernel_time": 0.926621, "process_mem_max_rss": "145596416", "process_out_blocks": "0", "process_user_time": 2.682332}
+[0m17:05:32.630722 [debug] [MainThread]: Command `dbt init` succeeded at 17:05:32.630551 after 7.41 seconds
+[0m17:05:32.638518 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:05:32.639731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b07e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d5f410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c13ce0>]}
+[0m17:05:32.640467 [debug] [MainThread]: Flushing usage events
+[0m17:05:32.933104 [debug] [MainThread]: An error was encountered while trying to flush usage events
