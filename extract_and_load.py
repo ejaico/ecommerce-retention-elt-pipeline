@@ -12,7 +12,7 @@ def fetch_api_data():
     # Duplicate users to create a realistic 100-customer dataset
     base_users = users_res.json()
     users = []
-    for i in range(10):
+    for i in range(50):
         for u in base_users:
             u_copy = u.copy()
             u_copy['id'] = u['id'] + (i * 10)

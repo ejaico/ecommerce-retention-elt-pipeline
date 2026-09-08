@@ -23,15 +23,17 @@ An automated, production-grade ELT data pipeline built with **Python**, **DuckDB
           │
           ▼  (Automated Testing & BI Dashboards)
 [ GitHub Actions Nightly Run ] ──> [ Streamlit / Power BI Dashboard ]
-* **Ingestion & Storage:** Python (requests, pandas), DuckDB
-* **Transformation & Modeling: dbt Core (dbt-duckdb), SQL (CTEs, Window Functions, Aggregate Logic)
-* **Data Quality & Governance: dbt Schema Tests (unique, not_null, referential integrity)
-* **Orchestration: GitHub Actions CI/CD workflow (scheduled nightly at midnight)
-* **Visualization: Streamlit / Power BI
+```
+
+* **Ingestion & Storage:** Python (`requests`, `pandas`), DuckDB
+* **Transformation & Modeling:** dbt Core (`dbt-duckdb`), SQL (CTEs, Window Functions, Aggregate Logic)
+* **Data Quality & Governance:** dbt Schema Tests (`unique`, `not_null`, referential integrity)
+* **Orchestration:** GitHub Actions CI/CD workflow (scheduled nightly at midnight)
+* **Visualization:** Power BI
 
 ---
 
-##📊 dbt Data Lineage Graph (DAG)
+## 📊 dbt Data Lineage Graph (DAG)
 
 * (Drag and drop your dbt Lineage Graph screenshot image here)*
 
@@ -39,9 +41,12 @@ An automated, production-grade ELT data pipeline built with **Python**, **DuckDB
 
 ## 💡 Key Business Metrics & Analytics Delivered
 
-1. **RFM Customer Segmentation:** Classified customer base into behavioral cohorts (Champions / VIP, Loyal Customers, New Customers, At Risk / Churned).
-2. **Promotion & Incentive ROI:** Analyzed margin impact of promotional discount codes (SUMMER20, PROMO10, WELCOME15) on net order revenue.
-3. **Behavioral Conversion Funnel:** Measured step-by-step user drop-offs across session events (page_view $\rightarrow$ product_view $\rightarrow$ add_to_cart $\rightarrow$ checkout_start $\rightarrow$ purchase).
+1. **RFM Customer Segmentation:**
+   * Classified customer base into behavioral cohorts (`Champions / VIP`, `Loyal Customers`, `New Customers`, `At Risk / Churned`).
+2. **Promotion & Incentive ROI:**
+   * Analyzed margin impact of promotional discount codes (`SUMMER20`, `PROMO10`, `WELCOME15`) on net order revenue.
+3. **Behavioral Conversion Funnel:**
+   * Measured step-by-step user drop-offs across session events (page_view $\rightarrow$ product_view $\rightarrow$ add_to_cart $\rightarrow$ checkout_start $\rightarrow$ purchase).
 
 ---
 
@@ -49,5 +54,5 @@ An automated, production-grade ELT data pipeline built with **Python**, **DuckDB
 
 **Clone the repository:**
    ```bash
-   git clone [https://github.com/ejaico/ecommerce-retention-elt-pipeline.git](https://github.com/ejaico/ecommerce-retention-elt-pipeline.git)
+   git clone https://github.com/ejaico/ecommerce-retention-elt-pipeline.git
    cd healthtech-quality-measures-pipeline
