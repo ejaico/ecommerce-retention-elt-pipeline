@@ -35,7 +35,13 @@ An automated, production-grade ELT data pipeline built with **Python**, **DuckDB
 
 ## 📊 dbt Data Lineage Graph (DAG)
 
-* (Drag and drop your dbt Lineage Graph screenshot image here)*
+<img width="771" height="449" alt="dbt_dag" src="https://github.com/user-attachments/assets/6758ff27-7d4a-4a05-9bf9-798364559452" />
+
+---
+
+## 📈 BI Analytics Dashboard
+
+<img width="1310" height="728" alt="Ecommerce Screenshot 2" src="https://github.com/user-attachments/assets/4831e5f5-0927-416c-b12b-384139bb4db9" />
 
 ---
 
